@@ -1,0 +1,100 @@
+.App {
+  text-align: center;
+}
+
+.lista-mascotas {
+  grid-auto-rows: minmax(150px, auto);
+  gap: 20px;
+  padding: 20px;
+  justify-items: center;
+  text-align: center;
+}
+
+.mascota-item {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+  /* Ocupa todo el ancho disponible dentro de cada celda */
+  box-sizing: border-box;
+  /* Incluir padding y borde en el tamaño total */
+  transition: transform 0.3s ease;
+  /* Transición suave para el hover */
+}
+
+.mascota-item:hover {
+  transform: scale(1.05);
+  /* Pequeño efecto de zoom al pasar el ratón */
+}
+
+.mascota-imagen {
+  width: 100%;
+  /* La imagen ocupa todo el ancho del contenedor */
+  height: 200px;
+  /* Fija la altura de las imágenes */
+  object-fit: cover;
+  /* Recorta la imagen para ajustarse sin distorsión */
+}
+
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  /* margin: 10px; */
+}
+
+.mascota-info {
+  padding: 10px;
+}
+
+.mascota-info h3 {
+  margin: 10px 0;
+  font-size: 1.2em;
+  /* Tamaño del nombre */
+}
+
+.mascota-info p {
+  margin: 5px 0;
+  color: #555;
+  /* Color para subtítulos */
+}
+
+.mascota-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.mascota-link:hover {
+  text-decoration: underline;
+  /* Subrayado en hover */
+}
+
+.detalle-mascota {
+  padding: 20px;
+}
+
+.detalle-imagen {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
